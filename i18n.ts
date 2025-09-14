@@ -1,21 +1,46 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-// Import translation files
-import enTranslation from "./public/locales/en/Translation.json";
-import hiTranslation from "./public/locales/hi/Translation.json";
-import mrTranslation from "./public/locales/mr/Translation.json";
-
 i18n.use(initReactI18next).init({
   resources: {
     en: {
-      translation: enTranslation,
+      translation: {
+        dashboard: "Dashboard",
+        customers: "Customers",
+        policies: "Policies",
+        renewals: "Renewals",
+        "compare policies": "Compare Policies",
+        payments: "Payments",
+        claims: "Claims",
+        reports: "Reports",
+        signout: "Sign Out",
+      },
     },
     hi: {
-      translation: hiTranslation,
+      translation: {
+        dashboard: "डैशबोर्ड",
+        customers: "ग्राहक",
+        policies: "पॉलिसी",
+        renewals: "नवीनीकरण",
+        "compare policies": "पॉलिसी तुलना",
+        payments: "भुगतान",
+        claims: "दावे",
+        reports: "रिपोर्ट्स",
+        signout: "साइन आउट",
+      },
     },
     mr: {
-      translation: mrTranslation,
+      translation: {
+        dashboard: "डॅशबोर्ड",
+        customers: "ग्राहक",
+        policies: "पॉलिसी",
+        renewals: "नूतनीकरणे",
+        "compare policies": "पॉलिसीची तुलना",
+        payments: "पेमेंट्स",
+        claims: "दावे",
+        reports: "अहवाल",
+        signout: "साइन आउट",
+      },
     },
   },
   lng: "en", // default language
